@@ -122,9 +122,11 @@
                     }
                     
                     .card {
-                        padding: 15px 15px 10px 15px;
-                        gap: 18px;
-                        width: calc(100% - 30px);
+                        padding: 15px 0;
+                        /* gap: 10px; */
+                        /* width: calc(100% - 30px); */
+                        justify-content: space-evenly;
+                        width: 100%;
                         border-radius: 10px;
                         margin-bottom: 13px;
                     }
@@ -166,6 +168,31 @@
                     
                     .round {
                         border-radius: 50%;
+                    }
+                    /* story gradient  */
+                    
+                    .gradient {
+                        position: relative;
+                        padding: 5.7px;
+                        /* margin: 5px; */
+                        /* display: inline-block; */
+                        /* font-size: 30px; */
+                    }
+                    
+                    .gradient::before {
+                        content: "";
+                        position: absolute;
+                        width: 68.5px;
+                        height: 68.5px;
+                        /* top: 10px; */
+                        inset: 0;
+                        border-radius: 50%;
+                        padding: 3px;
+                        background-image: linear-gradient(45deg, #ff7a00, #ffd600, #ff0169, #d300c5, #7638fa);
+                        -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+                        -webkit-mask-composite: xor;
+                        mask-composite: exclude;
+                        /* pointer-events: none; */
                     }
                     /* .cat {
                             width: 70px;
