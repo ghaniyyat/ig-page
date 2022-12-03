@@ -99,9 +99,9 @@
                         justify-content: center;
                     } */
                     
-                    #base {
+                    .base {
                         width: 5%;
-                        margin: 0 200px 80px 200px;
+                        margin: 0 auto 80px;
                     }
                     
                     .content-page {
